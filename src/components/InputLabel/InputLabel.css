@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.input-label-wrapper {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.input-label {
+  color: #1a1a1e;
+  font-family: 'Inter', serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.input-label--disabled {
+  color: #70707b;
+}
+
+.info-icon {
+  display: none;
+}

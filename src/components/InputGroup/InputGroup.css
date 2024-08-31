@@ -1,0 +1,18 @@
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.input-group--top {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.input-group--side {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}

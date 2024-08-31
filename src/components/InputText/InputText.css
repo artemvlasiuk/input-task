@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+  --input-text-height-xs: 24px;
+  --input-text-height-md: 36px;
+  --input-text-height-lg: 40px;
+  --input-text-height-xl: 48px;
+}
+
+.input-text {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #d1d1d6;
+  border-radius: 4px;
+  height: auto;
+  min-width: calc(1.5 * var(--input-text-height-md));
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input-text--xs {
+  padding: 2px 12px;
+  height: var(--input-text-height-xs);
+  min-width: calc(1.5 * var(--input-text-height-xs));
+}
+
+.input-text--md {
+  padding: 8px 12px;
+  height: var(--input-text-height-md);
+  min-width: calc(1.5 * var(--input-text-height-md));
+}
+
+.input-text--lg {
+  padding: 8px 16px;
+  height: var(--input-text-height-lg);
+  min-width: calc(1.5 * var(--input-text-height-lg));
+}
+
+.input-text--xl {
+  padding: 12px 16px;
+  height: var(--input-text-height-xl);
+  min-width: calc(1.5 * var(--input-text-height-xl));
+}
+
+.input-text:focus-within {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 0 3px #2e90fa3d;
+}
+
+.input-text--error {
+  border-color: #fda29b;
+}
+
+.input-text--error:focus-within {
+  border-color: #fda29b;
+  box-shadow: 0 0 0 3px #f044383d;
+}
+
+.input-text--quiet {
+  border: none;
+}
+
+.input-text--quiet:hover {
+  border: 1px solid #d1d1d6;
+}
+
+.input-text-field {
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.input-text-field--lg,
+.input-text-field--xl {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.input-text-field--disabled {
+  cursor: url('./img/cursorDisabled.svg'), auto;
+}
+
+.input-text-field::placeholder {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.input-text-field:focus {
+  outline: none;
+}
+
+.input-text-field:disabled {
+  background: none;
+}
+
+.input-text-field:disabled::placeholder {
+  color: #d1d1d6;
+}
+
+.input-text-help {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
